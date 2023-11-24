@@ -4,19 +4,29 @@
 * {
     font-family: 'Dancing Script', cursive;
     font-size: 1.3rem;
-    background: black;
-    color: white;
+    background-color: rgb(187, 187, 187);
+    color: #555555;
+}
+
+#not-defined-yet {
+    background: radial-gradient(circle, rgba(18,255,0,1) 5%, rgba(189,19,130,1) 12%, rgba(83,4,255,1) 18%, rgba(22,185,199,1) 22%, rgba(210,127,16,1) 29%, rgba(21,187,95,1) 33%, rgba(70,219,15,1) 35%, rgba(33,64,181,1) 40%, rgba(222,20,158,1) 43%, rgba(48,189,25,1) 48%, rgba(210,36,198,1) 51%, rgba(232,40,128,1) 57%, rgba(203,42,29,1) 62%, rgba(22,190,228,1) 67%, rgba(118,226,19,1) 72%, rgba(147,23,207,1) 76%, rgba(221,56,11,1) 81%, rgba(121,212,13,1) 85%, rgba(121,221,22,1) 89%, rgba(114,18,231,1) 94%, rgba(18,76,214,1) 96%, rgba(29,123,142,1) 100%);
 }
 
 h1 {
-    color: red;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #08aa4b;
+    font-weight: bolder;
+    text-decoration:underline;
+    padding: 1rem;
+    margin: 1rem 0rem;
 }
 
 #eye-div {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 100%;
     display: flex;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -25,6 +35,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    zoom: 230%;
-    color: #2ecc71;
+    zoom: 180%;
+    color: #08aa4b;
+    cursor: pointer;
+}
+
+#eye:hover {
+    transition: .3s;
+    transform: scale(1.2);
 }
