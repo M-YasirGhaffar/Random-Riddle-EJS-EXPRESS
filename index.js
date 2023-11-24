@@ -10,17 +10,17 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get('/', async (req, res) => {
-  try {
-    const response = await axios.get('https://riddles-api.vercel.app/random');
-    const riddle = response.data;
+    try {
+        const response = await axios.get('https://riddles-api.vercel.app/random');
+        const riddle = response.data;
 
-    res.render('index', { riddle });
-  } catch (error) {
-    console.error('Error fetching riddle:', error);
-    res.status(500).send('Internal Server Error');
-  }
+        res.render('index', { riddle });
+    } catch (error) {
+        console.error('Error fetching riddle:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+    console.log(`Server is running at http://localhost:${port}`);
 });
