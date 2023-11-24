@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riddle App</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <h1>One Useless Random Riddle For You</h1>
+  <div>
+    <h2>Riddle:</h2>
+    <p><%= riddle.riddle %></p>
+
+    <button onclick="toggleAnswer()">Toggle Answer</button>
+    <div id="answerSection" style="display: none;">
+        <h2>Answer:</h2>
+        <p><%= riddle.answer %></p>
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer() {
+      const answerSection = document.getElementById('answerSection');
+      
+      if (answerSection.style.display === 'none') {
+        answerSection.style.display = 'block';
+      } else {
+        answerSection.style.display = 'none';
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
