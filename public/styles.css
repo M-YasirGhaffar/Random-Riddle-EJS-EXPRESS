@@ -9,13 +9,12 @@
 }
 
 body {
+    box-sizing: border-box;
     border: 5px #555555 groove;
     border-radius: 6px;
-    min-height: 100vh;
+    min-height: 98vh;
     padding-bottom: 1rem;
-    outline: none;
-    margin: none;
-    box-sizing: border-box;
+    padding-bottom: 2rem;
 }
 
 h1 {
@@ -63,5 +62,4 @@ p {
 
 #eye:hover {
     transition: .2s;
-    transform: scale(1.1);
 }
