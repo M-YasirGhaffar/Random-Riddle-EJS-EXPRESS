@@ -17,6 +17,7 @@ body {
     margin: none;
     box-sizing: border-box;
 }
+
 h1 {
     display: flex;
     justify-content: center;
